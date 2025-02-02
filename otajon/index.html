@@ -7,24 +7,195 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
   </head>
   <body>
     <main>
-      <section class="partner">
+      <section class="feature">
         <div class="container">
-          <div class="partner__tools"></div>
-          <div class="partner-content">
-            <h3 class="partner-content__title">See Our trusted partners</h3>
-            <p class="partner-content__subtitle">
+          <div class="content">
+            <div class="feature__content-top">
+              <h1 class="content__title text-center">
+                Some excellent
+                <span class="content__title-bg">features</span> for you
+              </h1>
+              <p class="content__subtitle text-center">
+                An enim nullam tempor sapien gravida donec enim ipsum porta
+                justo congue magna at pretium purus pretium ligula
+              </p>
+            </div>
+
+            <div class="feature-cards">
+              <div class="feature-card feature-card__blue">
+                <div class="feature-card__icon">
+                  <span class="icon__task-list"></span>
+                </div>
+                <div class="feature-icon__text">
+                  <p class="feature-card__title">Preset List of Task</p>
+                  <p class="feature-card__description">
+                    Make bill payments easily using the wallet app
+                  </p>
+                </div>
+              </div>
+              <div class="feature-card feature-card__violet">
+                <div class="feature-card__icon">
+                  <span class="icon__bell"></span>
+                </div>
+                <div class="feature-icon__text">
+                  <p class="feature-card__title">Reminder of Task</p>
+                  <p class="feature-card__description">
+                    Make bill payments easily using the wallet app
+                  </p>
+                </div>
+              </div>
+              <div class="feature-card feature-card__orange">
+                <div class="feature-card__icon">
+                  <span class="icon__agenda"></span>
+                </div>
+                <div class="feature-icon__text">
+                  <p class="feature-card__title">Reminder of Task</p>
+                  <p class="feature-card__description">
+                    Make bill payments easily using the wallet app
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="analytics">
+        <div class="container analytics__wrapper">
+          <img src="../images/todays.png" alt="" class="analytics__wrapper__image" />
+          <div class="analytics__content content ">
+            <p class="content__title">
+              Analytics
+              <span class="content__title-bg">& Reporting</span> Brackdown
+            </p>
+            <p class="content__subtitle">
+              An enim nullam tempor sapien gravida donec enim ipsum porta justo
+              congue magna at pretium purus pretium ligula
+            </p>
+            <div class="analytics-cards">
+              <div class="analytics-card">
+                <div class="analytics-card__icon analytics-card__icon_timer">
+                  <span class="icon__timer"></span>
+                </div>
+                <div class="analytics-card__text">
+                  <p class="analytics-card__title">Automatic event tracking</p>
+                  <p class="analytics-card__subtitle">
+                    Time Tracking is never been easier. Just let the stopwatch
+                    run
+                  </p>
+                </div>
+              </div>
+              <div class="analytics-card">
+                <div class="analytics-card__icon analytics-card__icon_settings">
+                  <span class="icon__settings"></span>
+                </div>
+                <div class="analytics-card__text">
+                  <p class="analytics-card__title">Customizable dashboard</p>
+                  <p class="analytics-card__subtitle">
+                    Time Tracking is never been easier. Just let the stopwatch
+                    run
+                  </p>
+                </div>
+              </div>
+
+              <div class="analytics-card">
+                <div class="analytics-card__icon analytics-card__icon_check">
+                  <span class="icon__check"></span>
+                </div>
+                <div class="analytics-card__text">
+                  <p class="analytics-card__title">Customizable dashboard</p>
+                  <p class="analytics-card__subtitle">
+                    Time Tracking is never been easier. Just let the stopwatch
+                    run
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="partner">
+        <div class="container partner-wrapper">
+          <div class="partner-tools">
+            <div class="parner-tools-left">
+              <span class="partner-tools__icon partner-tools__icon_first">
+                <img src="../images/partner-first.png" alt="" />
+              </span>
+              <span class="partner-tools__icon partner-tools__icon_second">
+                <img src="../images/partner-third.png" alt="" />
+              </span>
+              <span class="partner-tools__icon partner-tools__icon_third">
+                <img src="../images/partner-fourth.png" alt="" />
+              </span>
+            </div>
+            <div class="parner-tools-right">
+              <span class="partner-tools__icon partner-tools__icon_fourth">
+                <img src="../images/partner-second.png" alt="" />
+              </span>
+              <span class="partner-tools__icon partner-tools__icon_fivth">
+                <img src="../images/partner-fiveth.png" alt="" />
+              </span>
+            </div>
+          </div>
+          <div class="partner-content content">
+            <h3 class="content__title">
+              See <span class="content__title-bg">Our trusted</span> partners
+            </h3>
+            <p class="content__subtitle">
               Vero homero perfecto mei ut, sonet aperiam an nec. Ni nec dict
               altera legimu. Me vita de lege ndos expet end is ad. Ex mei omita
               aliu mi ando
             </p>
-            <button class="partner-content__btn">Get Started</button>
+            <button class="content__btn content__btn_outlined mt-4">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <span class="reviews__like"></span>
+        <span class="reviews__smile"></span>
+        <div class="container reviews__container">
+          <div class="reviews__content content">
+            <h3 class="content__title text-center">
+              What our <span class="content__title-bg">Clients</span> say
+            </h3>
+            <p class="content__subtitle text-center">
+              Growth your business with using us
+            </p>
+          </div>
+          <div class="reviews__slider content">
+            <div class="reviews__slider-item">
+              <div class="reviews__slider-item-image"></div>
+              <div class="reviews__slider-item-content">
+                <p class="reviews__slider-item-text content__subtitle">
+                  Vero homero perfecto mei ut, sonet aperiam an nec. Ni nec dict
+                  altera legimu. Me vita de lege ndos expet end is ad. Ex mei
+                  omita aliu mi ando
+                </p>
+                <div class="reviews__slider-item-author">
+                  <div class="reviews__slider-item-author-info">
+                    <p class="reviews__slider-item-author-name">Mila McSabbu</p>
+                    <p class="reviews__slider-item-author-position">Designer</p>
+                  </div>
+                </div>
+                <div class="reviews__slider-dots">
+                  <span
+                    class="reviews__slider-dot reviews__slider-dot_active"
+                  ></span>
+                  <span class="reviews__slider-dot"></span>
+                  <span class="reviews__slider-dot"></span>
+                  <span class="reviews__slider-dot"></span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

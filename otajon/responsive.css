@@ -1,0 +1,104 @@
+@media only screen and (max-width: 1440px) {
+  .reviews {
+    margin-top: 30px;
+  }
+  .reviews__like,
+  .reviews__smile {
+    display: none;
+  }
+  .analytics__wrapper__image {
+    max-width: 600px;
+    left: 0;
+  }
+
+  .partner-tools__icon {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .analytics__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .analytics__wrapper__image {
+    position: static;
+    width: 100%;
+  }
+  .analytics__content {
+    max-width: 900px;
+  }
+  .analytics__content > p {
+    text-align: center;
+  }
+  .analytics-cards {
+    margin-top: 30px;
+  }
+
+  .analytics-card__text {
+    max-width: unset;
+  }
+
+  .partner-wrapper {
+    padding-right: unset;
+    max-width: unset;
+    padding: 0 10%;
+  }
+
+  .parner-tools-right {
+    padding-top: unset;
+  }
+  .partner-tools__icon_third {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  .partner-wrapper {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 20px;
+    height: auto;
+  }
+  .partner-content {
+    width: auto;
+  }
+  .parner-tools-right {
+    padding-top: unset;
+  }
+  .partner-tools__icon_third {
+    display: none;
+  }
+  .parner-tools-left,
+  .parner-tools-right {
+    display: grid;
+    grid-template-rows: 120px 120px;
+    grid-template-columns: 120px;
+  }
+  .partner-tools__icon img {
+    width: 66px;
+    height: 66px;
+  }
+  .partner-tools__icon {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 678px) {
+  
+  .reviews__slider-dots {
+    left: unset;
+  }
+  .reviews__slider-item {
+    grid-template-columns: minmax(300px, 450px);
+    justify-content: center;
+  }
+
+  .reviews__slider-item-image::before {
+    left: unset;
+    top: unset;
+    right: -100%;
+  }
+}

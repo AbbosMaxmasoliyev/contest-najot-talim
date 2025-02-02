@@ -12,3 +12,10 @@
 body {
   font-family: 'Poppins', serif;
 }
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+}
