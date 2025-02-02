@@ -12,11 +12,11 @@
 
 /* styles.css */
 .menu__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  /* display: -webkit-box;
+  display: -ms-flexbox; */
   display: flex;
   gap: 30px 50px;
-  list-style: none;
+  list-style-type: none;
 }
 .login {
   color: #e5735a;
