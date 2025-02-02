@@ -14,7 +14,78 @@
     <link rel="stylesheet" href="./responsive.css" />
   </head>
   <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header__inner">
+          <a href="#" class="site-header__inner-logo-link">
+            <img
+              src="./images/Logo-avzal.svg"
+              alt="logo image"
+              class="site-header__inner-logo-img"
+            />
+          </a>
+          <nav class="site-header__nav">
+            <ul class="site-header__inner-list">
+              <li class="site-header__inner-item">
+                <a href="#demos" class="site-header__inner-item-link">Demos</a>
+              </li>
+              <li class="site-header__inner-item">
+                <a href="#features" class="site-header__inner-item-link"
+                  >Features</a
+                >
+              </li>
+              <li class="site-header__inner-item">
+                <a href="#pricing" class="site-header__inner-item-link"
+                  >Pricing</a
+                >
+              </li>
+              <li class="site-header__inner-item">
+                <a href="#contact" class="site-header__inner-item-link"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <ul class="site-header__inner-auth">
+              <li class="site-header__inner-auth-item">
+                <a href="#" class="site-header__inner-auth-item-link-login"
+                  >Login</a
+                >
+              </li>
+              <li class="site-header__inner-auth-item">
+                <a href="#" class="site-header__inner-auth-item-link-signup"
+                  >Sign up</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <button class="burger-btn">
+            <img
+              width="30"
+              height="30"
+              src="./images/Menu.svg"
+              alt="This is btn help us make responsive design"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
     <main>
+      <section class="primary">
+        <div class="primary__container container">
+          <h1 class="primary__title">
+            A collaborative Time Tracking that you Need
+          </h1>
+          <p class="primary__subtitle">
+            An enim nullam tempor sapien gravida donec enim ipsum porta justo
+            congue magna at pretium purus pretium ligula
+          </p>
+          <div class="primary__info">
+            <a class="primary__link" href="#">Start 14 Days Trial</a>
+            <span class="primary__clipboard"></span>
+          </div>
+        </div>
+      </section>
       <section class="feature">
         <div class="container">
           <div class="content">
@@ -322,11 +393,43 @@
           </div>
         </div>
       </section>
+      <section class="invite">
+        <div class="invite__container container" id="invite">
+          <h2 class="invite__title title">Get it now for free</h2>
+          <p class="invite__caption caption">
+            We are offering free debit cards once you sing up and order a card.
+            we wont chargeyou for our debit card.
+          </p>
+          <div class="invite__links-wrapper">
+            <a class="invite__link" href="#"
+              ><img src="./images/Button1.svg" alt="" /></a
+            ><a class="invite__link" href="#"
+              ><img src="./images/Button2.svg" alt="" />
+            </a>
+          </div>
+          <div class="invite__image">
+            <img
+              class="invite__app-example"
+              src="./images/mobilescreen.png"
+              style="margin-left: -100px"
+              alt="Mobile Screen"
+              width="400"
+              height="567"
+            />
+          </div>
+        </div>
+      </section>
     </main>
     <script>
       function toggleButton(button) {
         button.classList.toggle('active')
       }
+      const burgerBtn = document.querySelector('.burger-btn')
+      const nav = document.querySelector('.site-header__nav')
+
+      burgerBtn.addEventListener('click', () => {
+        nav.classList.toggle('active')
+      })
     </script>
   </body>
 </html>
