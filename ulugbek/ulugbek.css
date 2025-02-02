@@ -581,6 +581,7 @@ body {
     .tracker_inner-box_div{
         margin: 0;
         margin-top: 45px;
+        height: auto;
     }
     .tracker_inner-box_image-1,
     .tracker_inner-box_image-3{
