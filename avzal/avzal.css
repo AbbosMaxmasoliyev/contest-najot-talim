@@ -769,3 +769,116 @@
     left: -60px;
   }
 }
+
+
+/* Footer */
+.footer {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.footer__container {
+  padding-top: 130px;
+  padding-bottom: 60px;
+}
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 50px 110px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(64, 64, 64, 0.1882352941);
+}
+.footer__links-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0 40px;
+}
+.footer__bottom {
+  /* display: -webkit-box;
+  display: -ms-flexbox; */
+  display: flex;
+  /* -webkit-box-pack: justify;
+  -ms-flex-pack: justify; */
+  justify-content: space-between;
+  /* -ms-flex-wrap: wrap; */
+  /* flex-wrap: wrap; */
+  gap: 25px 110px;
+  padding-top: 40px;
+}
+.footer__terms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px 110px;
+}
+.footer__link {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #404040;
+}
+
+.footer__top {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.footer__bottom {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.footer__terms {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.footer__link {
+  font-size: 16px;
+  color: #404040;
+  opacity: 0.5;
+}
+}
+@media screen and (max-width: 445px) {
+.footer__container {
+  padding-top: 80px;
+}
+.footer__top {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.footer .menu__list {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+}
+@media screen and (max-width: 375px) {
+.footer__top {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.footer .menu__list {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+}
