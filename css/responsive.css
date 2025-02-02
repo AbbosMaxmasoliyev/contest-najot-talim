@@ -56,6 +56,7 @@
     gap: 30px 50px;
     list-style-type: none;
   }
+}
   @media (max-width: 1335px) {
     .tracker_inner-box_list-item_title {
       font-size: 20px;
@@ -672,22 +673,12 @@
   }
 
   .invite__container {
-    display: -ms-grid;
-    display: grid;
-    padding-top: 100px;
-    -ms-grid-columns: (1fr) [2];
-    grid-template-columns: repeat(2, 1fr);
-    max-height: 676px;
-    gap: 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .invite__image {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 3;
-    grid-row: 1 / span 3;
-    -ms-grid-column: 2;
-    grid-column: 2;
-    padding-left: 50px;
-    position: relative;
+    
   }
   .invite__app-example {
     height: 100%;
@@ -716,17 +707,7 @@
     font-family: Poppins, sans-serif;
     line-height: 70px;
   }
-  .invite__title::before {
-    content: '';
-    position: absolute;
-    width: 500px;
-    height: 280px;
-    left: -230px;
-    bottom: 20px;
-    z-index: -5;
-    background-size: contain !important;
-    background: url('./images/qul1.svg') 0 0 no-repeat;
-  }
+
   .invite__caption {
     font-size: 20px;
     line-height: 36px;
@@ -738,14 +719,13 @@
     -ms-grid-row-align: start;
     align-self: start;
     padding-top: 20px;
-    width: 430px;
+    max-width: 430px;
     z-index: 5;
   }
   .invite__links-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: -90px;
     gap: 20px;
   }
   .invite__link:first-child {
