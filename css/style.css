@@ -36,6 +36,82 @@ body {
 }
 
 /* styles.css */
+
+
+.site-header {
+  background-color: #fff8f2;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  padding-bottom: 20px;
+}
+.site-header__inner {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+.site-header__nav {
+  display: flex;
+  align-items: center;
+  gap: 140px;
+}
+.site-header__inner-logo-link {
+  text-decoration: none;
+  display: inline-block;
+}
+.site-header__inner-logo-img {
+  width: 198px;
+  height: 43px;
+}
+.site-header__inner-list,
+.site-header__inner-auth {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  list-style-type: none;
+}
+.site-header__inner-auth {
+  gap: 36px;
+}
+.site-header__inner-item-link,
+.site-header__inner-auth-item-link-login,
+.site-header__inner-auth-item-link-signup {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  color: #1c0e0d;
+  font-family: Inter, sans-serif;
+}
+.site-header__inner-auth-item-link-login {
+  font-weight: 500;
+  color: #ff553e;
+  font-family: Inter, sans-serif;
+}
+.site-header__inner-auth-item-link-signup {
+  padding: 16px 32px;
+  background: #ff553e;
+  border-radius: 34px;
+  display: inline-block;
+  font-weight: 500;
+  color: #fff;
+  font-family: Inter, sans-serif;
+}
+.burger-btn {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.burger-btn span {
+  width: 25px;
+  height: 3px;
+  display: block;
+}
+
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -128,7 +204,7 @@ body {
   background-size: 176px !important;
   background-position: left bottom !important;
   left: 0;
-  background: url('./images/Shape-avzal.svg') 0 0 no-repeat;
+  background: url('../images/Shape-avzal.svg') 0 0 no-repeat;
 }
 .primary__title::before {
   content: '';
@@ -138,7 +214,7 @@ body {
   top: -110px;
   width: 121px;
   height: 174px;
-  background: url('./images/Vector-avzal.svg') 0 0 no-repeat;
+  background: url('../images/Vector-avzal.svg') 0 0 no-repeat;
   background-size: contain !important;
 }
 .primary__title::after {
@@ -149,7 +225,7 @@ body {
   top: -96px;
   width: 121px;
   height: 174px;
-  background: url('./images/Watch-avzal.svg') 0 0 no-repeat;
+  background: url('../images/Watch-avzal.svg') 0 0 no-repeat;
   background-size: contain !important;
 }
 .primary__info {
@@ -204,7 +280,7 @@ body {
   height: 119px;
   top: 40px;
   left: 290px;
-  background: url('./images/strelka.svg') 0 0 no-repeat;
+  background: url('../images/strelka.svg') 0 0 no-repeat;
   background-size: contain;
 }
 .primary__clipboard {
@@ -214,7 +290,7 @@ body {
   height: 191px;
   top: -120px;
   left: 360px;
-  background: url('./images/clipboard.png') 0 0 no-repeat;
+  background: url('../images/clipboard.png') 0 0 no-repeat;
   background-size: contain;
 }
 /* .primary__link::before {
@@ -256,7 +332,7 @@ body {
   height: 62px;
   top: 250px;
   left: 20px;
-  background: url('./images/star-avzal.svg') 0 0 no-repeat;
+  background: url('../images/star-avzal.svg') 0 0 no-repeat;
   background-size: contain !important;
 }
 
@@ -289,7 +365,7 @@ body {
   color: #1c0e0d;
   font-weight: 700;
   position: relative;
-  background: url('./images/Shape-avzal.svg') left bottom no-repeat;
+  background: url('../images/Shape-avzal.svg') left bottom no-repeat;
 }
 
 .content {
